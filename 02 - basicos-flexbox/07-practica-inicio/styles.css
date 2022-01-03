@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header-sitio {
+    background-color: #03A9F4;
+    padding:0 20px;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Flex aqui*/
+}
+@media screen and (max-width:768px) {
+    .header-sitio {
+        /* Flex aqui*/
+       
+        background-color: red;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
+.header-sitio h1 {
+    color:white;
+}
+
+nav {
+    /* Flex aqui*/
+   justify-content: center;
+}
+nav a {
+    color: white; 
+    font-family: 'IBM Plex Serif', serif;
+    text-decoration: none;
+}
+
+.contenedor {
+    background-color: white;
+    min-height: calc( 100vh - 20px );
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+
+   
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+    color:white;
+}
+
+.contenedor-flex {
+    margin-top: 20px;
+    /* Flex aqui*/
+
+    display: flex;
+    flex-direction: column-reverse;
+
+
+    }
+@media screen and (min-width:768px) { 
+    .contenedor-flex {
+       /* Flex aqui*/
+       flex-direction: row;
+    }
+}
+
+.principal {
+    /* Flex aqui*/
+}
+aside {
+    /* flex aqui*/
+    order: 2;
+}
+
+aside {
+    background-color: #03A9F4;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width:768px) {
+    .principal {
+        /* Flex aqui*/
+        flex: 0 1 60%;
+        margin-right: 20px;
+
+    }
+    aside {
+        /* Flex aqui*/
+        flex: 2;
+        background-color: #03f403;
+
+    }
+}
+
+.servicios .servicio {
+    /* Flex aqui*/
+    flex: 1;
+    flex: 0 1 calc ( 33.3% - 1rem);
+
+}
+@media screen and (min-width:768px) {
+    .servicios {
+        /* Flex aqui*/
+        display: flex;
+        
+    }
+    .servicios .servicio {
+        /* Flex aqui*/
+      
+         
+        
+    }
+}
+
+.servicio {
+    padding: 5px;
+    background-color: #E53935;
+}
+
+
+.servicio:nth-child(2) {
+    background-color: #8E24AA;
+}
+
+.servicio:nth-child(3) {
+    background-color: #3F51B5;
+}
+
+footer {
+    height: 100px;
+    background-color: #8E24AA;
+    margin-top: 20px;
+    /* Flex aqui*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+}

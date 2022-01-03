@@ -1,0 +1,61 @@
+body {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.contenedor {
+  max-width: 1100px;
+  margin: 0% auto;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  flex: 0 1 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+h3 {
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  font-weight: 700;
+}
+@media screen and (min-width: 480px) {
+  .contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .entrada {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 768px) {
+  .entrada {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+.entrada {
+  margin-bottom: 1rem;
+}
+.contenido {
+  background-color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contenido h3 {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.contenido span {
+  color: #db008d;
+}
+
+.boton {
+  background-color: #008fd1;
+  color: white;
+  padding-top: 1rem;
+  padding: 0.6rem 3rem;
+  display: inline-block;
+  text-decoration: none;
+}

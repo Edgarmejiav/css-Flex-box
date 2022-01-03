@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.contenedor{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+@media (min-width:768px){
+    .nosotros {
+        flex: 0 0 70%
+    }
+    .sidebar{
+        flex: 0 0 30%
+    }
+
+}
+
+.servicios { 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+@media (min-width:768px){
+    .servicio { 
+        flex: 1;
+       background: blue;
+    }
+    .doble{
+        flex: 2 !important;
+        background: red;
+    }
+}

@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "IBM Plex Serif", serif;
+}
+
+.contenedor {
+  background-color: white;
+  min-height: calc(100vh - 20px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 0 30px;
+}
+
+nav {
+  background-color: #3f51b5;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  padding: 20px;
+}
+nav ul li:hover {
+  background-color: #1a2770;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+/* sencillo */
+.sencillo ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sencillo ul li {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sencillo ul {
+    flex-direction: row;
+  }
+  .sencillo ul li {
+    margin-bottom: 0rem;
+  }
+}
+/* iconos */
+.iconos ul li a {
+  display: flex;
+  justify-content: center;
+}
+.iconos .icono {
+  flex: 0 1 2rem;
+}
+.iconos .texto span {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .iconos ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .iconos ul li {
+    flex: 0 1 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .iconos ul li {
+    flex: 1;
+  }
+}
+
+/* Dropdown */
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .dropdown ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.dropdown ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown ul li {
+    position: relative;
+    display: flex;
+    flex: 1 1 100%;
+  }
+  .dropdown ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+  }
+
+  .dropdown ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* redes sociales */
+
+.sociales ul li span {
+  display: none;
+}
+
+.sociales ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.sociales ul li a:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.sociales ul li a[href="http://facebook.com"]::before
+{
+  content: "\f082";
+}
+.sociales ul li a[href="http://twitter.com"]::before
+{
+  content: "\f099";
+}
+.sociales ul li a[href="http://youtube.com"]::before
+{
+  content: "\f167";
+}
+.sociales ul li a[href="http://instagram.com"]::before
+{
+  content: "\f16d";
+}
+.sociales ul li a[href="http://pinterest.com"]::before
+{
+  content: "\f0d2";
+}
+
+.navegacion-social-dropdown {
+  display: flex;
+  /*   flex-direction: column;
+ */
+  justify-content: space-between;
+  background-color: #3f51b5;
+}
