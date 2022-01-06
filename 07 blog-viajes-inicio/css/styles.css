@@ -1,0 +1,265 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+h2 {
+  flex: 0 1 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+h3 {
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  font-weight: 700;
+}
+img {
+  max-width: 100%;
+}
+/* Headear */
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.barra {
+  position: absolute;
+  background-color: #008fd1;
+  width: 100%;
+  top: 1rem;
+  padding: 1rem 0;
+}
+.barra .contenedor {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .barra .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.logo-img {
+  max-width: 20rem;
+}
+.logo,
+.navegacion {
+  text-align: center;
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .navegacion {
+    flex: 0 0 20rem;
+  }
+  .navegacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navegacion ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+}
+.header-contenedor h1 {
+  color: #008fd1;
+  font-size: 2rem;
+  text-transform: uppercase;
+  max-width: 25rem;
+}
+
+/* Contenido */
+.contenido {
+  background-color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.contenido {
+  padding: 1rem;
+  text-align: center;
+}
+.contenido h3 {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.contenido span {
+  color: #db008d;
+}
+.boton {
+  background-color: #008fd1;
+  color: white;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .entrada {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .entrada {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+
+/* 
+categorias icons */
+.categorias ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+.categorias ul li {
+  flex: 1 0 calc(50% - 1rem);
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .categorias ul li {
+    flex: 1;
+  }
+}
+
+.categorias ul li:nth-child(1) {
+  background-color: #008fd1;
+}
+.categorias ul li:nth-child(2) {
+  background-color: #d100ae;
+}
+.categorias ul li:nth-child(3) {
+  background-color: #6c017a;
+}
+.categorias ul li:nth-child(4) {
+  background-color: #d18f00;
+}
+
+.categorias ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categorias ul li i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #008fd1;
+  padding-top: 1rem;
+  color: #ffffff;
+}
+
+.footer h2 {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .contenedor {
+    display: flex;
+  }
+  .footer .caja {
+    flex: 1;
+  }
+}
+
+.copyright {
+  background-color: #03557a;
+  margin: 1rem 0 0 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* redes sociales */
+
+.sociales ul li span {
+  display: none;
+}
+
+.sociales ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.sociales ul li a:before {
+  font-family: "Font Awesome 5 Brands";
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.sociales ul li a {
+  text-decoration: none;
+}
+
+.sociales ul li a[href="http://facebook.com"]::before
+{
+  content: "\f082";
+}
+.sociales ul li a[href="http://twitter.com"]::before
+{
+  content: "\f099";
+}
+.sociales ul li a[href="http://youtube.com"]::before
+{
+  content: "\f167";
+}
+.sociales ul li a[href="http://instagram.com"]::before
+{
+  content: "\f16d";
+}
+.sociales ul li a[href="http://pinterest.com"]::before
+{
+  content: "\f0d2";
+}
+
+.navegacion-social-dropdown {
+  display: flex;
+  /*   flex-direction: column;
+ */
+  justify-content: space-between;
+  background-color: #3f51b5;
+}
